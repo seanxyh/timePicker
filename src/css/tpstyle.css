@@ -1,0 +1,4 @@
+/*
+ * 优化弹出层控制面板大小
+ */
+#ui-datepicker-div, .ui-datepicker{ font-size: 85%; }

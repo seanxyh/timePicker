@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Adding a Timepicker to jQuery UI Datepicker</title> 
+
+
+		<!-- 控制时间面板大小 -->
+		<link rel="stylesheet" media="all" type="text/css" href="./src/css/tpstyle.css" />
+		<!-- 控制时间面板大小 -->
+
+		<link rel="stylesheet" media="all" type="text/css" href="./src/css/jquery-ui.css" />
+		<link rel="stylesheet" media="all" type="text/css" href="./src/css/jquery-ui-timepicker-addon.css" />
+		
+		<script type="text/javascript" src="./src/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="./src/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./src/js/jquery-ui-timepicker-addon.js"></script>
+		<script type="text/javascript" src="./src/js/jquery-ui-sliderAccess.js"></script>
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				$('#basic_example_1').datetimepicker({
+					//时间设置
+					dateFormat: "yy-dd-mm",
+					separator: ' ',
+					timeFormat: 'hh:mm:ss',
+					
+					//显示设置	
+					numberOfMonths: 2,
+					minDate: 0,
+					maxDate: 30,
+				});
+			});
+			
+		</script>
+	</head> 
+	
+
+	
+	<body> 
+
+		<h2>Examples</h2>
+		
+		<input type="text" name="basic_example_1" id="basic_example_1" value="" />
+		
+			
+
+
+
+<pre style='font-size: 12px; line-height: 16px; padding: 5px 5px 5px 10px; margin: 10px 0; background-color: #e4f4d4; border-left: solid 5px #9EC45F; overflow: auto'>
+	使用方式：
+	第一步：导入文件
+		< !-- 控制时间面板大小 -->
+		< link rel="stylesheet" media="all" type="text/css" href="./src/css/tpstyle.css" />
+		< !-- 控制时间面板大小 -->
+
+		< link rel="stylesheet" media="all" type="text/css" href="./src/css/jquery-ui.css" />
+		< link rel="stylesheet" media="all" type="text/css" href="./src/css/jquery-ui-timepicker-addon.css" />
+		
+		< script type="text/javascript" src="./src/js/jquery-1.9.1.min.js"></script>
+		< script type="text/javascript" src="./src/js/jquery-ui.min.js"></script>
+		< script type="text/javascript" src="./src/js/jquery-ui-timepicker-addon.js"></script>
+		< script type="text/javascript" src="./src/js/jquery-ui-sliderAccess.js"></script>
+		
+	第二步：面板时间调整
+		< script type="text/javascript">
+		
+			$(function(){
+				$('#basic_example_1').datetimepicker({
+					//时间设置
+					dateFormat: "yy-dd-mm",
+					separator: ' ',
+					timeFormat: 'hh:mm:ss',
+					
+					//显示设置	
+					numberOfMonths: 2,
+					minDate: 0,
+					maxDate: 30,
+				});
+			});
+			
+		< /script>
+	
+	第三步：元素放置(设置ID)
+		< input type="text" name="basic_example_1" id="basic_example_1" value="" />
+
+</pre>
+	</body> 
+</html>
